@@ -209,7 +209,7 @@ public class IBiblioResolver extends URLResolver {
                                 super.endElement(uri, localName, qName);
                             }
                         }, null);
-                        if (localCopy.toString() == "true") {
+                        if (localCopy.toString().equals("true")) {
                             return mrid.getRevision();
                         }
                     } else {
